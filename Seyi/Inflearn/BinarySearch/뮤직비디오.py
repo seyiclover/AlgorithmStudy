@@ -11,13 +11,12 @@ def count_DVD(capacity):
 
 
 def min_DVD_size(songs, m):
-    lt=1
+    lt=9
     rt=sum(songs)
-    maxx=max(songs)     # mid>=maxx를 설정하지 않으면 mid가 0이 되는 경우가 생긴다. mid 가 계속 작아져도 lt<=rt 조건을 만족하기 때문에(m=9인 경우)
     res=0
     while lt<=rt:
         mid=(lt+rt)//2
-        if  mid>=maxx and count_DVD(mid) <= m:  
+        if  count_DVD(mid) <= m:  
             rt=mid-1
             res=mid         # 조건을 만족하는 mid를 res에 저장
         else:
@@ -25,6 +24,6 @@ def min_DVD_size(songs, m):
     return res
   
 songs=[1, 2, 3, 4, 5, 6, 7, 8, 9]
-m = 9
+m = 3
 
 min_DVD_size(songs, m)
