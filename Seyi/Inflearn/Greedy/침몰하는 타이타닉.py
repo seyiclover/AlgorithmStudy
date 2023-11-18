@@ -25,3 +25,43 @@ m=140
 passenger=[90, 50, 70, 100, 60]
 # passenger=[45, 50, 60, 80, 70, 90, 100]
 titanic(n, m, passenger)
+
+
+# 정답 코드 
+def titanic(limit, p):
+    p.sort()
+    cnt=0       # 보트의 수
+
+    while p:        # p가 비어있지 않으면 참이돼서 작동 
+        if len(p)==1:
+            cnt+=1
+            break
+        if p[0]+p[-1]>limit:    # 한 사람이 타는 경우
+            p.pop()
+            cnt+=1
+        else:                   # 두 사람이 타는 경우
+            p.pop(0)
+            p.pop()
+            cnt+=1
+    return cnt
+
+# deque 활용 풀이
+from collections import deque
+
+def titanic(limit, p):
+    p.sort()
+    p=deque(p)
+    cnt=0
+
+    while p:
+        if len(p)==1:
+            cnt+=1
+            break
+        if p[0]+p[-1]>limit:
+            cnt+=1
+            p.pop()
+        else:
+            cnt+=1
+            p.popleft()
+            p.pop()
+    return cnt
