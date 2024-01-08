@@ -1,0 +1,20 @@
+eq[0] 10+10+10
+eq[1] - 50+40+40
+eq[2] - 30+30
+
+def plus(num): # 합 반환
+    num = list(map(int, num.split('+')))
+    return sum(num)
+
+eq = input()
+eq = eq.replace('-', ' ').split()
+
+eq[0] = plus(eq[0])
+
+result = int(eq[0])
+
+for i in range(1, len(eq)):
+    result -= plus(eq[i])
+
+
+print(result)
