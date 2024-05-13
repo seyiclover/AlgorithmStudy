@@ -1,13 +1,4 @@
-	</h1>
-									
-							</div>
-		</div>
-		<div class="col-md-12"><div class="table-responsive"><table class="table" id="problem-info"><thead><tr><th style="width:16%;">시간 제한</th><th style="width:16%;">메모리 제한</th><th style="width:17%;">제출</th><th style="width:17%;">정답</th><th style="width:17%;">맞힌 사람</th><th style="width:17%;">정답 비율</th></tr></thead><tbody><tr><td>2 초 </td><td>192 MB</td><td>67795</td><td>30130</td><td>24087</td><td>43.376%</td></tr></tbody></table></div></div>
-						<div id="problem-body" class="">
-			<div class="col-md-12">
-				<section id="description"  class="problem-section">
-				<div class="headline">
-				<h2>문제</h2>
+<h2>문제</h2>
 				</div>
 				<div id="problem_description" class="problem-text">
 				<p>N(1 &le; N &le; 100,000)개의 로프가 있다. 이 로프를 이용하여 이런 저런 물체를 들어올릴 수 있다. 각각의 로프는 그 굵기나 길이가 다르기 때문에 들 수 있는 물체의 중량이 서로 다를 수도 있다.</p>
