@@ -7,49 +7,8 @@
 
 <p>각 로프들에 대한 정보가 주어졌을 때, 이 로프들을 이용하여 들어올릴 수 있는 물체의 최대 중량을 구해내는 프로그램을 작성하시오. 모든 로프를 사용해야 할 필요는 없으며, 임의로 몇 개의 로프를 골라서 사용해도 된다.</p>
 
-				</div>
-				</section>
-			</div>
-										<div class="col-md-12">
-					<section id="input"  class="problem-section">
-					<div class="headline">
-					<h2>입력</h2>
-					</div>
-					<div id="problem_input" class="problem-text">
-					<p>첫째 줄에 정수 N이 주어진다. 다음 N개의 줄에는 각 로프가 버틸 수 있는 최대 중량이 주어진다. 이 값은 10,000을 넘지 않는 자연수이다.</p>
-
-					</div>
-					</section>
-				</div>
-	
-				<div class="col-md-12">
-					<section id="output"  class="problem-section">
-					<div class="headline">
-					<h2>출력</h2>
-					</div>
-					<div id="problem_output" class="problem-text">
-					<p>첫째 줄에 답을 출력한다.</p>
-
-					</div>
-					</section>
-				</div>
-						<div class="col-md-12">
-			<section id="limit" style="display:none;" class="problem-section">
-			<div class="headline">
-			<h2>제한</h2>
-			</div>
-			<div id="problem_limit" class="problem-text">
-						</div>
-			</section>
-			</div>
-																	<div class="col-md-12">
-				<div class="row">
-					<div class="col-md-6">
-						<section id="sampleinput1">
-						<div class="headline">
-						<h2>예제 입력 1
-							<button type="button" class="btn btn-link copy-button" style="padding: 0px;" data-clipboard-target="#sample-input-1">복사</button>
-						</h2>
+				
+<h2>예제 입력 1</h2>
 						</div>
 						<pre class="sampledata" id="sample-input-1">2
 10
